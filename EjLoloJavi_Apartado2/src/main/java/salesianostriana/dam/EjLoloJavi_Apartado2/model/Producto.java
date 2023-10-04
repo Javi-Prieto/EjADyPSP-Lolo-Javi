@@ -19,10 +19,12 @@ public class Producto {
     @GeneratedValue
     private Long id;
 
-    private String nombre, desc, pvp;
+    private String nombre, desc;
+
+    private int pvp;
 
     private List<String> imagenes;
 
     @ManyToOne
-    private Category categoria;
+    private Categoria categoria;
 }
